@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the Resume Scanner</h1>
+<p>Upload and manage resumes, and match them to job descriptions.</p>
+<a href="{{ url_for('main.upload') }}">Upload Resumes</a>
+<a href="{{ url_for('main.job_description') }}">Add Job Description</a>
+{% endblock %}
+
+

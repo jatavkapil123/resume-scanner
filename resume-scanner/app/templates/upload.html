@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Upload Resumes</h1>
+<form method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.resume.label }} {{ form.resume() }}
+    {{ form.submit() }}
+</form>
+{% endblock %}
+

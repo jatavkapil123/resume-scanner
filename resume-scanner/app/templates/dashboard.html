@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<p>View and manage resumes and job descriptions.</p>
+{% for resume in resumes %}
+    <p>{{ resume.name }} - {{ resume.contact_info }}</p>
+{% endfor %}
+{% endblock %}
+
